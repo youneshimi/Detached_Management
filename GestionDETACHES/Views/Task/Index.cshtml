@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Liste des tâches";
+}
+
+<div class="container">
+    <h2>Liste des tâches</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nom de la tâche</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tâche 1</td>
+                <td>Description de la Tâche 1</td>
+                <td><a href="@Url.Action("Details", "Task", new { id = 1 })">Voir les détails</a></td>
+            </tr>
+            <tr>
+                <td>Tâche 2</td>
+                <td>Description de la Tâche 2</td>
+                <td><a href="@Url.Action("Details", "Task", new { id = 2 })">Voir les détails</a></td>
+            </tr>
+            <!-- Ajoutez plus de tâches statiques si nécessaire -->
+        </tbody>
+    </table>
+
+    <a href="@Url.Action("Create", "Task")" class="btn btn-success">Ajouter une tâche</a>
+</div>

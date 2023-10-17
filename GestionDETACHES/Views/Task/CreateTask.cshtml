@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Créer une tâche";
+}
+
+<div class="container">
+    <h2>Créer une nouvelle tâche</h2>
+    <form>
+        <div class="form-group">
+            <label for="taskName">Nom de la tâche :</label>
+            <input type="text" class="form-control" id="taskName" name="taskName" placeholder="Entrez le nom de la tâche" required>
+        </div>
+        <div class="form-group">
+            <label for="taskDescription">Description de la tâche :</label>
+            <textarea class="form-control" id="taskDescription" name="taskDescription" rows="3" placeholder="Entrez une description de la tâche" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="taskImage">Image de la tâche :</label>
+            <input type="file" class="form-control-file" id="taskImage" name="taskImage" accept="image/*">
+        </div>
+        <button type="submit" class="btn btn-primary">Créer la tâche</button>
+    </form>
+</div>
+
+

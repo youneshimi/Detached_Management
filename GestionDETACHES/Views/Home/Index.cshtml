@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Bienvenue dans l'application de gestion de tâches";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Gestionnaire de Tâches Moderne</h1>
+    <p>Bienvenue dans l'application de gestion de tâches la plus moderne. Nous simplifions la gestion de vos tâches quotidiennes.</p>
+
+    <a href="@Url.Action("Index", "Task")" class="btn btn-primary btn-lg">Voir la liste des tâches</a>
+
+    <!-- Bouton vert vers la vue CreateTask.cshtml -->
+    <a href="@Url.Action("Create", "Task")" class="btn btn-success btn-lg">Créer une nouvelle tâche</a>
+</div>
